@@ -29,7 +29,7 @@ class IndexController extends ApplicationController
 			}   
 		}
 	
-        header("Location: /toodo-task/web/");
+        header("Location: /todo/web/");
 	
 	}
 

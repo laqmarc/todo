@@ -31,7 +31,7 @@ async function updateStatus(id, status) {
   //try -- catch
   try {
     // the response
-    const lilu = await fetch('/toodo-task/web/update-state', {
+    const lilu = await fetch('/todo/web/update-state', {
       method: 'POST',
       headers: headers,
       body: JSON.stringify({
@@ -52,7 +52,7 @@ async function updateStatus(id, status) {
       element.innerHTML = newState;
       //finish
       if (newState === 'finish') {
-        window.location.replace("/toodo-task/web/");
+        window.location.replace("/todo/web/");
       }
     } else {
       console.log('response error: ', lilu.json());

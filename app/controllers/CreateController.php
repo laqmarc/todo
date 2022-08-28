@@ -29,12 +29,12 @@ class CreateController extends ApplicationController
 			);
 		
 			file_put_contents('data.json',json_encode($data), LOCK_EX);
-			header("Location: /toodo-task/web/");	
+			header("Location: /todo/web/");	
 		}
 		
 		else
 		{
-			header("Location: /toodo-task/web/new");
+			header("Location: /todo/web/new");
 		}
 	}
 }

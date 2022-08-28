@@ -17,7 +17,7 @@ class UpdateController extends ApplicationController
 		}
 
 		if (!$this->view->task) {
-			header("Location: /toodo-task/web");
+			header("Location: /todo/web");
 		}
 	}
 
@@ -45,10 +45,10 @@ class UpdateController extends ApplicationController
 			$data = new Data();
 			$data->updateTask($id, $taskData);
 		
-			header("Location: /toodo-task/web/");	
+			header("Location: /todo/web/");	
 		}
 		else{
-			header("Location: /toodo-task/web/new");
+			header("Location: /todo/web/new");
 		}
 	}
 
